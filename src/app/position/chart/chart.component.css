@@ -1,7 +1,7 @@
 /* 大容器：左右並排 */
 .container {
   display: flex;
-  padding-top: 10px;
+  padding-top: 30px;
   /* height: 350px; */
 }
 

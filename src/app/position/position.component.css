@@ -1,11 +1,7 @@
 .list {
   flex-grow: 1;
   overflow: auto;
-  min-height: 60px;
-}
-
-.chart {
-  width: 300px;
+  min-height: 30px;
 }
 
 .container {
