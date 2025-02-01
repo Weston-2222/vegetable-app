@@ -1,6 +1,7 @@
 /* 大容器：左右並排 */
 .container {
   display: flex;
+  padding-top: 10px;
   /* height: 350px; */
 }
 
