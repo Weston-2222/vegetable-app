@@ -4,8 +4,29 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100vw;
   background-color: #f8f8f8;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
+}
+button {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  padding: 10px 10px;
+  font-size: 16px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.safari-guide {
+  background-color: #fffae5;
+  padding: 15px;
+  border: 1px solid #ffd700;
+  border-radius: 5px;
+  font-size: 16px;
 }
