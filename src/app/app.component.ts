@@ -7,11 +7,11 @@ import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-root',
-  imports: [PositionComponent, CommonModule, InstallPwaComponent],
+  imports: [PositionComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   readonly dialog = inject(MatDialog);
   // 新增一個方法來檢查 Web App 是否已安裝
   private isWebAppInstalled(): boolean {
