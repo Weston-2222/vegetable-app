@@ -1,0 +1,39 @@
+<ng-template #vegetableTemplate let-index="index">
+  <div class="item" [ngClass]="{ twelve: index === 12 }">
+    <p>{{ positionList[index].title || "" }}</p>
+    @for (vegetable of positionList[index].vegetable; track vegetable.regex) {
+    <p [ngClass]="{ highlight: isHighlight(vegetable.regex) }">
+      {{ vegetable.name }} {{ vegetable.displayKeyword }}
+    </p>
+    }
+  </div>
+</ng-template>
+
+<div class="container">
+  <!-- 左邊區塊 -->
+  <section class="left-container">
+    <div
+      [ngTemplateOutlet]="vegetableTemplate"
+      [ngTemplateOutletContext]="{ index: 0 }"
+    ></div>
+
+    <div class="oneToFour">
+      @for (index of [1, 2, 3, 4]; track index) {
+      <ng-container
+        [ngTemplateOutlet]="vegetableTemplate"
+        [ngTemplateOutletContext]="{ index }"
+      ></ng-container>
+      }
+    </div>
+  </section>
+
+  <!-- 右邊區塊 -->
+  <section class="right-container">
+    @for (index of [5, 6, 7, 8, 9, 10, 11, 12, 13]; track index) {
+    <ng-container
+      [ngTemplateOutlet]="vegetableTemplate"
+      [ngTemplateOutletContext]="{ index }"
+    ></ng-container>
+    }
+  </section>
+</div>

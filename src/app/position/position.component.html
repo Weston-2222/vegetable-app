@@ -1,0 +1,8 @@
+<section class="container">
+  <app-chart [searchKeyword]="searchKeyword()" />
+
+  <div class="list">
+    <app-list [searchKeyword]="searchKeyword()" />
+  </div>
+  <app-keyboard class="keyboard" (keyword)="setSearchKeyword($event)" />
+</section>

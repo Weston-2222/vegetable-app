@@ -1,0 +1,9 @@
+<ul class="list">
+  @for (result of searchResults(); track result) {
+  <li class="item">
+    {{ result.item.vegetableName }}&nbsp;&nbsp;{{
+      result.item.productName
+    }}&nbsp;&nbsp;{{ result.item.code }}
+  </li>
+  }
+</ul>

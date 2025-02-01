@@ -1,0 +1,64 @@
+<div class="top">
+  <div class="keyword">{{ enterKeyword() }}</div>
+  <div class="back" (click)="backButton()">back</div>
+</div>
+
+<div class="keyboard-container">
+  <!-- 第一行：數字 + 倒退鍵 -->
+  <div class="keyboard-row">
+    @for (item of ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']; track
+    item) {
+    <div
+      class="key"
+      (click)="clickKeyboard(item)"
+      [class.include]="isInclude(item)"
+      [class.not-include]="!isInclude(item)"
+    >
+      {{ item }}
+    </div>
+    }
+  </div>
+
+  <!-- 第二行：Q W E R T Y U I O P -->
+  <div class="keyboard-row">
+    @for (item of ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P']; track
+    item) {
+    <div
+      class="key"
+      (click)="clickKeyboard(item)"
+      [class.include]="isInclude(item)"
+      [class.not-include]="!isInclude(item)"
+    >
+      {{ item }}
+    </div>
+    }
+  </div>
+
+  <!-- 第三行：A S D F G H J K L -->
+  <div class="keyboard-row">
+    @for (item of ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L']; track item) {
+    <div
+      class="key"
+      (click)="clickKeyboard(item)"
+      [class.include]="isInclude(item)"
+      [class.not-include]="!isInclude(item)"
+    >
+      {{ item }}
+    </div>
+    }
+  </div>
+
+  <!-- 第四行：Z X C V B N M -->
+  <div class="keyboard-row">
+    @for (item of ['Z', 'X', 'C', 'V', 'B', 'N', 'M']; track item) {
+    <div
+      class="key"
+      (click)="clickKeyboard(item)"
+      [class.include]="isInclude(item)"
+      [class.not-include]="!isInclude(item)"
+    >
+      {{ item }}
+    </div>
+    }
+  </div>
+</div>

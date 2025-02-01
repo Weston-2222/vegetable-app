@@ -1,0 +1,11 @@
+/* 父容器 - 清單 */
+.list {
+  list-style-type: none; /* 移除預設的圓點 */
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}

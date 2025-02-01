@@ -1,0 +1,50 @@
+/* 大容器：左右並排 */
+.container {
+  display: flex;
+  /* height: 350px; */
+}
+
+/* 左側容器：以垂直排列為主 */
+.left-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.oneToFour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 每列分成兩個等分 */
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.row .item {
+  width: 100%;
+}
+
+/* 右側容器：使用 Grid 佈局 */
+.right-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto; /* 每行高度自動調整 */
+  width: 70%;
+}
+
+/* 共同的 item 風格 */
+.item {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+  background-color: white;
+  padding: 3px;
+}
+p {
+  font-size: 12px;
+  margin: 0;
+}
+.highlight {
+  color: red;
+}
+.twelve {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 每列分成兩個等分 */
+}

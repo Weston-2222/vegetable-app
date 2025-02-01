@@ -1,0 +1,15 @@
+.list {
+  flex-grow: 1;
+  overflow: auto;
+  min-height: 60px;
+}
+
+.chart {
+  width: 300px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
